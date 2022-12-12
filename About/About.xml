@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Quality Doors</name>
+	<author>SteveZero</author>
+	<supportedVersions>
+		<li>1.4</li>
+		<li>1.3</li>
+		<li>1.2</li>
+	</supportedVersions>
+	<packageId>SteveZero.QualityDoors</packageId>
+	<description>
+	features:
+	- allows quality to affect doors' hitpoints and opening speed.
+	- makes doors minimizable so you can uninstall and reinstall your doors.
+	- increases default work to build by 1.5x for doors.
+	- increases work to build factor of metals (steel:2x, uranium:1.57x, plasteel:1.13x) and wood (1.43x) to better align with stone's 5x.
+	</description>
+	<loadAfter>
+		<li>jecrell.doorsexpanded</li>
+		<li>zymex.HospitalsExtended</li>
+	</loadAfter>
+</ModMetaData>

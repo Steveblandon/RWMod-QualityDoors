@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[@Name="DoorBase"]</xpath>
+      <value>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <thingCategories>
+          <li>Buildings</li>
+        </thingCategories>
+      </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[@Name="DoorBase"]/statBases</xpath>
+      <value>
+        <Mass>50</Mass>
+      </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[@Name="DoorBase"]/comps</xpath>
+      <value>
+        <li>
+          <compClass>CompQuality</compClass>
+        </li>
+      </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="Door"]/statBases/WorkToBuild</xpath>
+      <value>
+        <WorkToBuild>1275</WorkToBuild>
+      </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="Autodoor"]/statBases/WorkToBuild</xpath>
+      <value>
+        <WorkToBuild>1650</WorkToBuild>
+      </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="Uranium"]/stuffProps/statFactors/WorkToBuild</xpath>
+      <value>
+        <WorkToBuild>3</WorkToBuild>
+      </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="Plasteel"]/stuffProps/statFactors/WorkToBuild</xpath>
+      <value>
+        <WorkToBuild>2.5</WorkToBuild>
+      </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="WoodLog"]/stuffProps/statFactors/WorkToBuild</xpath>
+      <value>
+        <WorkToBuild>1</WorkToBuild>
+      </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Steel"]/stuffProps/statFactors</xpath>
+      <value>
+        <WorkToBuild>2</WorkToBuild>
+      </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+      <xpath>Defs/StatDef[defName="DoorOpenSpeed"]</xpath>
+      <value>
+        <parts>
+          <li Class="StatPart_Quality">
+            <factorAwful>0.8</factorAwful>
+            <factorPoor>0.9</factorPoor>
+            <factorNormal>1</factorNormal>
+            <factorGood>1.1</factorGood>
+            <factorExcellent>1.2</factorExcellent>
+            <factorMasterwork>1.3</factorMasterwork>
+            <factorLegendary>1.5</factorLegendary>
+          </li>
+        </parts>
+      </value>
+    </Operation>
+
+</Patch>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Hospitals Extended</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[@Name="SterileDoorBase"]</xpath>
+        <value>
+          <minifiedDef>MinifiedThing</minifiedDef>
+          <thingCategories>
+            <li>Buildings</li>
+          </thingCategories>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[@Name="SterileDoorBase"]/statBases</xpath>
+        <value>
+          <Mass>50</Mass>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[@Name="SterileDoorBase"]/comps</xpath>
+        <value>
+          <li>
+            <compClass>CompQuality</compClass>
+          </li>
+        </value>
+      </li>
+
+      </operations>
+    </match>
+    </Operation>
+</Patch>
