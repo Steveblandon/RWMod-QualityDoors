@@ -1,10 +1,11 @@
 /obj
 /bin
 /Properties
-/Assemblies
 .vs
 *.csproj.user
 *.user*
-*.dll
 info.txt
 /Tracker.txt
+UnityEngine*
+/Assemblies
+/packages
